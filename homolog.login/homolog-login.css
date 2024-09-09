@@ -8,8 +8,7 @@
 }
 
 body {
-  background-color: #c9d6ff;
-  background: linear-gradient(to right, #e2e2e2, #c9d6ff);
+  background-color: #696969;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +17,7 @@ body {
 }
 
 .container {
-  background-color: #fff;
+  background-color: #000000;
   border-radius: 30px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
   position: relative;
@@ -40,7 +39,7 @@ body {
 }
 
 .container a{
-  color: #333;
+  color: #fff;
   font-size: 13px;
   text-decoration: none;
   margin: 15px 0 10px;
@@ -66,8 +65,9 @@ body {
 }
 
 .container from{
-  background-color: #fff;
+  background-color: #000000;
   display: flex;
+  color: #fff;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -101,11 +101,11 @@ body {
 .container.active .sing-in{
   transform: translateX(100%);
 }
-
-.sing-up{
+<!--SingUp Button-->
+.sing-up{ 
   left: 0;
   width: 50%;
-  opacity: 0;
+  color: #2b16eb;
   z-index: 1;
 }
 
@@ -132,7 +132,7 @@ body {
 }
 
 .social-icons a{
-  border: 1px solid #ccc;
+  border: 1px solid #fff;
   border-radius: 20%;
   display: inline-flex;
   justify-content: center;
@@ -160,10 +160,10 @@ body {
 }
 
 .toggle{
-  background-color: #512da8;
+  background-color: #f86402;
   height: 100%;
   background: linear-gradient(to
-  right, #5c6bc0, #512da8);
+  right, #d85701, #f06407);
   color: #fff;
   position: relative;
   left: -100%;
