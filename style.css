@@ -1,0 +1,55 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('Uzumaki Clan.jpg');
+    background-size: cover;
+
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+main {
+    padding: 20px;
+}
+
+header {
+    background-color: #f0ad4e; 
+    padding: 10px;
+    width: 100%
+}
+.custom-jumbotron {
+    max-width: 400px; /* Ajuste a largura conforme necessário */
+    background-color: black;
+    color: #fff;
+}
+
+.card {
+    background-color: #000000;
+    color: #fff;
+}
+
+footer {
+    background-color: #f0ad4e; /* TF2 red */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+.nav {
+    justify-content: space-around;
+}
+
+.carousel-item {
+    justify-content: space-around;
+}
