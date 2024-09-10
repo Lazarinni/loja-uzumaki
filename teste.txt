@@ -1,2 +1,6 @@
 Teste
 Teste
+<input type='email' id="login" placeholder='E-mail'>
+           <input type='password' id="password" placeholder='Password'>
+         <a href='#'>Forgot Your Password?</a>
+         <button type="submit" onclick="login()">Sing In</button>
