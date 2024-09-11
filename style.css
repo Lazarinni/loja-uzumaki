@@ -30,6 +30,17 @@ header {
     position: fixed;
     z-index: 1000;
 }
+
+.logo {
+    max-height: 50px; /* Ajuste conforme necessário */
+    width: auto;
+}
+
+.row.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
 .custom-jumbotron {
     max-width: 400px; /* Ajuste a largura conforme necessário */
     background-color: black;
@@ -57,10 +68,11 @@ footer {
 .nav {
     display: flex;
     gap: 30px;
+    justify-content: end;
 }
 
-.flex-container {
+.container {
     display: flex;
     gap: 50px;
-    
+    justify-content: center;
 }
