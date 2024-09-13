@@ -2,6 +2,21 @@ const container = document.getElementById('container');
 const registerBtn = document.getElementById('register');
 const loginBtn = document.getElementById('login');
 
+let nome = document.querySelector('#name')
+let labelNome = document.querySelector('#labelNome')
+let validNome = false
+
+let usuario = document.querySelector('#usuario')
+let labelUsuario = document.querySelector('#labelUsuario')
+let validUsuario = false
+
+let senha = document.querySelector('#senha')
+let labelSenha = document.querySelector('#labelSenha')
+let validSenha = false
+
+let msgError = document.querySelector('#msgError')
+let msgSuccess = document.querySelector('#msgSuccess')
+
 registerBtn.addEventListener('click', () => {
     container.classList.add("active");
 });
@@ -9,6 +24,8 @@ registerBtn.addEventListener('click', () => {
 loginBtn.addEventListener('click', () => {
     container.classList.remove("active");
 });
+
+/* (12) AMARZENAGEM DE DADOS*/
 
 function dados() {
 
@@ -20,6 +37,11 @@ function dados() {
   ]
 return ds
 }
+
+/* (12) FIM DA AMARZENAGEM */
+
+
+/* (13) VALIDAÇÂO DO USUARIO */
 
 function login() {
 
@@ -41,3 +63,25 @@ const usuarios = dados()
   }
     
 }
+
+/* (13) FIM DA VALIDAÇÃO */
+
+/* (14) REGISTRO */
+
+function register() {
+
+}
+
+register.addEventListener('keyup', () => {
+  if(login.value.length <= 2){
+    labelLogin.setAttribute('style', 'color: red')
+    labelLogin.innerHTML = 'Nome *Insira no minimo 3 caracteres'
+    nome.setAttribute('style', 'border-color: red')
+    validLogin = false
+  } else {
+    labelNome.setAttribute('style', 'color: green')
+    labelNome.innerHTML = 'Nome'
+    nome.setAttribute('style', 'border-color: green')
+    validNome = true
+  }
+})
