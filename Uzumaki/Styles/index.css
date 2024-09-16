@@ -1,0 +1,79 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(1, 15, 46, 0.75)), url('/Uzumaki/Sources/Uzumaki Clan.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+}
+
+main {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: end;
+    background-color: #f0ad4e; 
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    /* position: fixed; */
+    /* z-index: 1000; */
+}
+
+.logo {
+    max-height: 50px; /* Ajuste conforme necessário */
+    width: auto;
+}
+
+.row.align-items-center {
+    display: flex;
+    align-items: center;
+}
+
+.custom-jumbotron {
+    max-width: 400px; /* Ajuste a largura conforme necessário */
+    background-color: black;
+    overflow: hidden;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.75);
+    margin-top: 60px;
+}
+
+.card {
+    background-color: #000000;
+    color: #fff;
+    
+}
+
+footer {
+    background-color: #f0ad4e; /* TF2 red */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+    justify-content: end;
+}
+
+.container {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
