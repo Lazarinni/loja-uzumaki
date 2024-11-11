@@ -1,3 +1,11 @@
-azul claro - #007BFF
+adicionar produtos com base no que houver no localstorage
 
-laranja claro - #f0ad4e
+adicionar botão para adicionar produtos
+
+adicionar carrinho correspondente a cada usuario
+
+adicionar modal para compra dos produtos
+
+adicionar botão de carrinho e fazer com que ele somente funcione caso o usuário esteja logado
+
+adicionar modal para carrinho(se possível)
