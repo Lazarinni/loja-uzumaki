@@ -1,63 +1,112 @@
-/* styles.css */
-
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: Montserrat, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: #007BFF;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
     background-size: 100% 100%;
+    background-color: black ;
     background-position: center;
 }
-header {
+
+header{
+    background-color: rgb(253, 148, 0);
+    position: sticky;
+    width: 100vw;
+    height: 9vh;
     display: flex;
-    justify-content: end;
-    background-color: #f0ad4e; 
-    padding: 10px;
-    width: 100%;
-    height: auto;
-    /* position: fixed; */
-    /* z-index: 1000; */
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
-    max-height: 50px; /* Ajuste conforme necessário */
-    width: auto;
+header *{
+    margin: 0px 15px;
 }
 
-footer {
-    background-color: #f0ad4e; /* TF2 red */
-    color: black;
-    text-align: center;
-    padding: 10px;
-    margin-top: 20px;
-    width: 100%;
-    bottom: 0;
+.links a {
+  padding: 13px;
+  margin: 0 10px 0 0;
+  border-radius: 15px;
+  background-color: #6C757D;
+  color: aliceblue;
+  text-decoration: none;
 }
 
-.nav {
+.links a:first-child,
+.links a:last-child {
+  background-color: #007BFF; 
+}
+.links a:hover {
+    filter: brightness(1.2); /* Destaca ao passar o mouse */
+}
+
+.main-content {
+    padding: 50px;
     display: flex;
-    gap: 30px;
-    justify-content: end;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
 }
+
+
 
 main{
     display: flex;
+    width: 100%;
+    height: 25vh;
 }
 
+.conteudo{
+    height: 550px;
+    margin-bottom: 40px;
+    background-image: url(/Uzumaki/Sources/equipe.jpg);
+    background-size: cover;          /* A imagem cobre todo o elemento */
+    background-position: center 20%;     /* A imagem fica centralizada */
+    background-repeat: no-repeat;    /* Evita que a imagem se repita */
+}
 
+.banner{
+    margin: 10px 0 10px 0;
 
-#fundo{
-    margin-top: 5px;
-    margin-bottom: 20px;
-    flex-direction: column;
-    background-size:auto;
-    background-color: #007BFF;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items:flex-start;
+    width: 400px;
+    height: 300px;
+    color: aliceblue;
+}
+
+.banner h1{
+    font-size: 5.5em;
+    margin-bottom: 25px;
+}
+
+.banner p{
+    font-size: 2em;
+}
+
+.logo {
+    max-height: 50px;
+    width: auto;
+}
+
+footer{
+    background-color: rgb(253, 148, 0);
     width: 100vw;
-    height: 100vh;
-    color: #fff;
-}
-
-#colaboradores {
-    color: #fff;
+    height: 10vh;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
