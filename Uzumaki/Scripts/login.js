@@ -46,7 +46,7 @@ function login() {
                 alert("Você foi logado com sucesso!")
 
                 setTimeout(() => {
-                    window.location.href = "/Uzumaki/Views/teste.html";
+                    window.location.href = "/Uzumaki/Views/index.html";
                 }, 0); // 0ms vai garantir que o código posterior seja executado antes do redirecionamento
 
                 return;
@@ -95,7 +95,7 @@ function register() {
         alert("Usuário cadastrado com sucesso!");
         sessionStorage.setItem("user", JSON.stringify(newUser));
         setTimeout(() => {
-            window.location.href = "/Uzumaki/Views/teste.html";
+            window.location.href = "/Uzumaki/Views/index.html";
         }, 0); // 0ms vai garantir que o código posterior seja executado antes do redirecionamento
         return;
     } catch(e){
