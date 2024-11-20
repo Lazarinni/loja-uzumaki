@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Styles/teste.css">
+    <link rel="stylesheet" href="Styles/mstyle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <script src="Scripts/carrosel.js" defer></script>
     <script src="Scripts/login.js" defer></script>
+    <script src="Scripts/carrinho.js" defer></script>
     <title>Loja Uzumaki</title>
 </head>
 
@@ -20,9 +22,27 @@
         </div>
         <div class="links">
 
-            <a href="Views/carrinho.html">
+            <a id="open-modal">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
+            <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h2>Meu carrinho</h2>
+                <button id="close-modal">Fechar</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart" id="cart">
+                    <div class="cart-items" id="cart-items"></div>
+                    <div class="total" id="total">Total: R$ 0.00</div>
+                    <button onclick="checkout()">Finalizar Compra</button>
+                </div>
+                <div class="payment-options" id="payment-options" style="display: none;">
+                    <h2>Escolha o método de pagamento</h2>
+                    <button onclick="pay('Cartão')">Cartão</button>
+                    <button onclick="pay('PIX')">PIX</button>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -179,7 +199,7 @@
                 <h3>Bandana do Naruto</h3>
                 <p>Bandana da aldeia da folha renegado.</p>
                 <div class="price">R$ 19,99</div>
-                <a href="#" class="buy-btn">Comprar</a>
+        <a href="#" class="buy-btn" onclick="addToCart('Bandana do Naruto', 19.99)">Comprar</a>
             </div>
         </div>
         <!-- Produto 2 -->
@@ -189,7 +209,7 @@
                 <h3>Bonecos do Naruto de feira</h3>
                 <p>Os ninjas mais fortes da folha.</p>
                 <div class="price">R$ 9,99</div>
-                <a href="#" class="buy-btn">Comprar</a>
+        <a href="#" class="buy-btn" onclick="addToCart('Bonecos do Naruto de feira', 9.99)">Comprar</a>
             </div>
         </div>
         <!-- Produto 3 -->
@@ -199,7 +219,7 @@
                 <h3>Brinco Akatsuki</h3>
                 <p>Brinco dos Akatsuki.</p>
                 <div class="price">R$ 39,99</div>
-                <a href="#" class="buy-btn">Comprar</a>
+        <a href="#" class="buy-btn" onclick="addToCart('Brinco Akatsuki', 39.99)">Comprar</a>
             </div>
         </div>
         <!-- Produto 4 -->
@@ -209,7 +229,7 @@
                 <h3>Camisa polo Akatsuki</h3>
                 <p>Disponiveis tam. P, M, G, GG, XG e XXG.</p>
                 <div class="price">R$ 89,99</div>
-                <a href="#" class="buy-btn">Comprar</a>
+        <a href="#" class="buy-btn" onclick="addToCart('Camisa polo Akatsuki', 89.99)">Comprar</a>
             </div>
         </div>
         <!-- Produto 5 -->
@@ -219,7 +239,7 @@
                 <h3>Caneca Time 7 - Naruto</h3>
                 <p>Disponivel!.</p>
                 <div class="price">R$ 99,99</div>
-                <a href="#" class="buy-btn">Comprar</a>
+                <a href="#" class="buy-btn" onclick="addToCart('Caneca Time 7 - Naruto', 99.99)">Comprar</a>
             </div>
         </div>
         <!-- Produto 6 -->
@@ -229,7 +249,7 @@
                 <h3>Filma Naruto Shippuden</h3>
                 <p>Ultima peça disponivel.</p>
                 <div class="price">R$ 199,99</div>
-                <a href="#" class="buy-btn">Comprar</a>
+               <a href="#" class="buy-btn" onclick="addToCart('Filme Naruto Shippuden', 199.99)">Comprar</a>
             </div>
         </div>
         <!-- Produto 7   -->
@@ -239,7 +259,7 @@
                 <h3>Boneco - Naruto Shippuden</h3>
                 <p>20pcs Disponiveis.</p>
                 <div class="price">R$ 299,99</div>
-                <a href="#" class="buy-btn">Comprar</a>
+                <a href="#" class="buy-btn" onclick="addToCart('Boneco - Naruto Shippuden', 299.99)">Comprar</a>
             </div>
         </div>
         <!-- Produto 8   -->
@@ -249,7 +269,7 @@
                 <h3>Naruto - Classico</h3>
                 <p>10Pcs Disponiveis.</p>
                 <div class="price">R$ 399,99</div>
-                <a href="#" class="buy-btn">Comprar</a>
+                        <a href="#" class="buy-btn" onclick="addToCart('Naruto - Clássico', 399.99)">Comprar</a>
             </div>
         </div>
     </main>
