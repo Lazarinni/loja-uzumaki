@@ -1,0 +1,290 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100vh;
+    /*background: linear-gradient(rgba(0, 0, 0, 0), rgba(1, 15, 46, 0.75)), url('/Uzumaki/Sources/Uzumaki Clan.jpg');*/
+    background-size: 100% 100%;
+    background-color: black ;
+    background-position: center;
+}
+
+.wrapper{
+    max-width: 1100px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.wrapper .carousel{
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: gray transparent;
+}
+
+/* Estilos para navegadores baseados no WebKit (Chrome, Edge) */
+.wrapper .carousel::-webkit-scrollbar {
+    width: 5px; 
+    height: 5px;
+}
+
+.wrapper .carousel::-webkit-scrollbar-track {
+    background: transparent; 
+}
+
+.wrapper .carousel::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.5); 
+    border-radius: 10px;
+}
+
+.wrapper .carousel::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.carousel.dragging .card{
+    cursor: grab;
+    user-select: none;
+}
+
+.carousel .card {
+    scroll-snap-align: start;
+    height: 342px;
+    list-style: none;
+    background: black;
+    color: aliceblue;
+    border-radius: 25px;
+    display: flex;
+    padding-bottom: 15px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+/*
+.carousel .card:hover{
+    background-color:gainsboro;
+}
+*/
+.img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.img img{
+    margin: auto;
+}
+
+.img span{
+    background-color: black;
+    width: 100%;
+    height: 40%;
+}
+
+.card .img img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+}
+
+.card h2{
+    font-weight: 500;
+    font-size: 1.56rem;
+    margin: 30px 0 5px;
+}
+
+.control{
+    cursor: pointer;
+    background-color: aliceblue;
+    border-radius: 50%;
+    height: 25px;
+    width: 50px;
+    margin: 15px;
+}
+
+.control:hover{
+    background-color:lightgray;
+}
+
+.control img{
+    height: 100%;
+    width: 100%;
+}
+
+.conteudo{
+    height: 550px;
+    margin-bottom: 40px;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1.0)), url('/Uzumaki/Sources/nat.jpg');
+    background-size: cover;          /* A imagem cobre todo o elemento */
+    background-position: center 20%;     /* A imagem fica centralizada */
+    background-repeat: no-repeat;    /* Evita que a imagem se repita */
+}
+
+.conteudo .links {
+    margin: 10px 0 0 90px;
+}
+
+header{
+    background-color: rgb(253, 148, 0);
+    position: sticky;
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header *{
+    margin: 0px 15px;
+}
+
+.links a {
+  padding: 13px;
+  margin: 0 10px 0 0;
+  border-radius: 15px;
+  background-color: #6C757D;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+.links a:first-child,
+.links a:last-child {
+  background-color: #007BFF; 
+}
+.links a:hover {
+    filter: brightness(1.2); /* Destaca ao passar o mouse */
+}
+
+.main-content {
+    padding: 50px;
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+}
+
+/* Card de produto */
+.product-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 350px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.2);
+}
+
+.product-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.product-card .info {
+    padding: 15px;
+}
+
+.product-card .info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #000;
+}
+
+.product-card .info p {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.product-card .info .price {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #28a745;
+}
+
+.product-card .info .buy-btn {
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.product-card .info .buy-btn:hover {
+    background-color: #0056b3;
+}
+
+
+footer{
+    background-color: rgb(253, 148, 0);
+    width: 100vw;
+    height: 10vh;
+    color: aliceblue;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 100%;
+    height: 25vh;
+}
+
+.banner{
+    margin: 30px 40px;
+    padding: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items:flex-start;
+    width: 400px;
+    height: 300px;
+    color: aliceblue;
+}
+
+.banner h1{
+    font-size: 5.5em;
+    margin-bottom: 25px;
+}
+
+.banner p{
+    font-size: 2em;
+}
+
+.logo {
+    max-height: 50px;
+    width: auto;
+}

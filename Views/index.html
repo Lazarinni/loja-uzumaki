@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Styles/teste.css">
+    <link rel="stylesheet" href="../Styles/mstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="../Scripts/carrosel.js" defer></script>
+    <script src="../Scripts/login.js" defer></script>
+    <script src="../Scripts/carrinho.js" defer></script>
+    <title>Loja Uzumaki</title>
+</head>
+
+<body onload="iniciarDados()">
+
+    <header class="header">
+        <a href="index.html">
+            <img src="/Uzumaki/Sources/logo.png" alt="Logo" class="logo">
+        </a>
+        </div>
+        <div class="links">
+            <button id="open-modal">Cart</button>
+        <div id="fade" class="hide"></div>
+        <div id="modal" class="hide">
+            <div class="modal-header">
+                <h2>Modal</h2>
+                <button id="close-modal">Fechar</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart" id="cart">
+                    <h2>Seu Carrinho</h2>
+                    <div class="cart-items" id="cart-items"></div>
+                    <div class="total" id="total">Total: R$ 0.00</div>
+                    <button onclick="checkout()">Finalizar Compra</button>
+                </div>
+                <div class="payment-options" id="payment-options" style="display: none;">
+                    <h2>Escolha o método de pagamento</h2>
+                    <button onclick="pay('Cartão')">Cartão</button>
+                    <button onclick="pay('PIX')">PIX</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="conteudo">
+        <div class="banner">
+            <h1 class="">Loja Uzumaki</h1>
+            <p class="">A loja geek favorita do Hokage!</p>
+        </div>
+        <div class="links">
+            <a class="" href="quemsomos.html" role="button">Quem Somos Nós &#62;</a>
+        </div>
+    </main>
+
+    <div class="wrapper">
+
+        <div class="left control" id="left">
+            <img src="../Sources/angle-left-solid.svg" alt="" draggable="false">
+        </div>
+
+        <ul class="carousel">
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+            <li class="card">
+                <div class="img">
+                    <img src="../Sources/bandana.jpeg" alt="" draggable="false">
+                    <span>
+                        <h2>Bandana Naruto</h2>
+                        <p>R$ 9,99</p>
+                    </span>
+                </div>
+            </li>
+
+        </ul>
+
+        <div class="right control" id="right">
+            <img src="../Sources/angle-right-solid.svg" alt="" draggable="false">
+        </div>
+
+    </div>
+    <main class="main-content">
+        <!-- Produto 1 -->
+        <div class="product-card">
+            <img src="/Uzumaki/Sources/bandana.jpeg" alt="Produto 1">
+            <div class="info">
+                <h3>Bandana do Naruto</h3>
+                <p>Bandana da aldeia da folha renegado.</p>
+                <div class="price">R$ 19,99</div>
+                <button class="buy-btn" onclick="addToCard('Bandana do Naruto', 19.99)">Adicionar ao carrinho</button>
+            </div>
+        </div>
+        <!-- Produto 2 -->
+        <div class="product-card">
+            <img src="/Uzumaki/Sources/bonecos.jpeg" alt="Produto 2">
+            <div class="info">
+                <h3>Bonecos do Naruto de feira</h3>
+                <p>Os ninjas mais fortes da folha.</p>
+                <div class="price">R$ 9,99</div>
+                <a href="#" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+        <!-- Produto 3 -->
+        <div class="product-card">
+            <img src="/Uzumaki/Sources/brinco.jpeg" alt="Produto 3">
+            <div class="info">
+                <h3>Brinco Akatsuki</h3>
+                <p>Brinco dos Akatsuki.</p>
+                <div class="price">R$ 39,99</div>
+                <a href="#" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+        <!-- Produto 4 -->
+        <div class="product-card">
+            <img src="/Uzumaki/Sources/camiseta.jpg" alt="Produto 4">
+            <div class="info">
+                <h3>Camisa polo Akatsuki</h3>
+                <p>Disponiveis tam. P, M, G, GG, XG e XXG.</p>
+                <div class="price">R$ 89,99</div>
+                <a href="#" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+        <!-- Produto 5 -->
+        <div class="product-card">
+            <img src="/Uzumaki/Sources/caneca.jpeg" alt="Produto 5">
+            <div class="info">
+                <h3>Caneca Time 7 - Naruto</h3>
+                <p>Disponivel!.</p>
+                <div class="price">R$ 99,99</div>
+                <a href="#" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+        <!-- Produto 6 -->
+        <div class="product-card">
+            <img src="/Uzumaki/Sources/dvd.webp" alt="Produto 6">
+            <div class="info">
+                <h3>Filma Naruto Shippuden</h3>
+                <p>Ultima peça disponivel.</p>
+                <div class="price">R$ 199,99</div>
+                <a href="#" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+        <!-- Produto 7   -->
+        <div class="product-card">
+            <img src="/Uzumaki/Sources/fanfic.jpg" alt="Produto 7">
+            <div class="info">
+                <h3>Boneco - Naruto Shippuden</h3>
+                <p>20pcs Disponiveis.</p>
+                <div class="price">R$ 299,99</div>
+                <a href="#" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+        <!-- Produto 8   -->
+        <div class="product-card">
+            <img src="/Uzumaki/Sources/mini.webp" alt="Produto 3">
+            <div class="info">
+                <h3>Naruto - Classico</h3>
+                <p>10Pcs Disponiveis.</p>
+                <div class="price">R$ 399,99</div>
+                <a href="#" class="buy-btn">Comprar</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Loja Uzumaki</p>
+    </footer>
+</body>
+
+</html>
