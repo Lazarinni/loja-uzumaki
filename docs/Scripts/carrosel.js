@@ -53,7 +53,7 @@ function iniciarDados() {
         // Cria o elemento de login
         const loginLink = document.createElement("a");
         loginLink.className = "";  // Adicione uma classe se desejar
-        loginLink.href = "login.html";
+        loginLink.href = "/docs/Views/login.html";
         loginLink.role = "button";
         loginLink.textContent = "Login";
 
