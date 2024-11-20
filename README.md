@@ -1,3 +1,6 @@
+# Link do site
+## https://lazarinni.github.io/loja-uzumaki/
+
 **Integrantes:**
 João Victor Lazarini da Fonseca
 Luiz Guilherme Barcelos dos Santos
