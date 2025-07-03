@@ -95,7 +95,7 @@ function register() {
         alert("Usuário cadastrado com sucesso!");
         sessionStorage.setItem("user", JSON.stringify(newUser));
         setTimeout(() => {
-            window.location.href = "/docs/index.html";
+            window.location.href = "index.html";
         }, 0); // 0ms vai garantir que o código posterior seja executado antes do redirecionamento
         return;
     } catch(e){
